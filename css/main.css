@@ -1,0 +1,49 @@
+body {
+	background-color: #222930;
+	font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+	color: #DC3D24;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.highlight {
+	color: #4EB1BA;
+}
+
+.normal {
+	color: #FFFFFF;
+}
+
+.small {
+	font-size: 35px;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #F8F8F8;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
