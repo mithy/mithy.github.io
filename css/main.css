@@ -1,49 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=latin-ext');
+
 body {
-	background-color: #222930;
-	font-family: 'Dosis', sans-serif;
+	background-color: #6080a9;
+    background-image: url('../img/index.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    min-height: 100vh;
+}
+
+.table {
+    display: table;
+    width: 100vw;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 4em;
+}
+
+.cell.center {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cell.center ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.cell.center ul li {
+    display: inline;
+    margin: 0.5em;
 }
 
 h1 {
-	color: #DC3D24;
+    font-size: 200%;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 45px;
-    color: #FFFFFF;
+p.lead {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.highlight {
-	color: #4EB1BA;
-}
-
-.normal {
-	color: #FFFFFF;
-}
-
-.small {
-	font-size: 35px;
+p {
+    width: calc(50vw - 8em);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 a:link {
-    color: red;
+    color: #fff;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #F8F8F8;
+    color: #fff;
 }
 
 /* mouse over link */
 a:hover {
-    color: hotpink;
+    color: #fff;
+    text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-    color: red;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 1.8vh;
+    }
+
+    p {
+        width: calc(100vw - 2em);
+        margin: 0;
+    }
+
+    p.lead {
+        margin-bottom: 1em;
+    }
+
+    .table, .row, .cell {
+        display: block;
+    }
+    
+    .cell {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .cell.center {
+        text-align: left;
+    }
+
+    .cell.center ul {
+        text-align: left;
+    }
 }
